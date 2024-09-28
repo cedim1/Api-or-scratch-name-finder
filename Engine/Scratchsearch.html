@@ -1,0 +1,25 @@
+<html>
+    <h2>Welcome to scratchersearch!</h2>
+    <h3>The worlds leading way of looking up any scratcher</h3>
+    <p>API:</p>
+    <textarea name="Api here" id="Apitextbox"></textarea>
+    <p></p>
+    <button onclick="openthis()">Run</button>
+    <script>
+        function openthis() {
+            var Apithatwerun = document.getElementById('Apitextbox').value
+            open('https://api.scratch.mit.edu/users/' + Apithatwerun + '/')
+        }
+    </script>
+    <p></p>
+    <p>Regular scratcher search</p>
+    <textarea name="username here" id="Apitextbox2"></textarea>
+    <p></p>
+    <button onclick="openthis2()">Run</button>
+    <script>
+        function openthis2() {
+            var Apithatwerun2 = document.getElementById('Apitextbox2').value
+            open('https://scratch.mit.edu/users/' + Apithatwerun2 + '/')
+        }
+    </script>
+</html>
